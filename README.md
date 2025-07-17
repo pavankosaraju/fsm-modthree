@@ -3,18 +3,18 @@ Find mod three of a binary integer using Finite State Machine approach
 
 ### Finite State Machines (FSM) explained
 
-<img src="./misc/eq.png" alt="drawing" width="600"/>
+<img src="./misc/eq.png" alt="FSM" width="600"/>
 
 ### Solving Mod three problem with FSM
 
 Let us solve this mod-three problem by a generic FSM. It takes the input characters, one at a time, MOST significant bit first and transitions between three states: S0, S1, S2.
 
-<img src="./misc/graph.png" alt="drawing" width="300"/>
+<img src="./misc/graph.png" alt="graph" width="300"/>
 
 
 The value returned from our function will depend on the state selected after the character sequence is exhausted. The final state will be converted to a remainder value as specified in the following table:
 
-<img src="./misc/table.png" alt="drawing" width="200"/>
+<img src="./misc/table.png" alt="table" width="200"/>
 
 
 For input string ”110”, the machine will operate as follows:
@@ -56,8 +56,11 @@ cd fsm-modthree
 ./run.sh ./tests/testcases.txt
 ```
 
+<img src="./misc/runs.png" alt="output" width="300"/>
+
 ### Test code
 
 ```
 python -m unittest -v
 ```
+<img src="./misc/tests.png" alt="test run" width="500"/>
