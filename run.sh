@@ -1,0 +1,1 @@
+python ./src/modthree.py -s $1
